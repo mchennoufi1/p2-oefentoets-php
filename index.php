@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
+<link href="css/index.css" rel="stylesheet" >
     <?php
     include('includes/header.php');
     ?>
@@ -22,6 +22,8 @@ try{
         echo "<td>" . $data["leerling"] . "</td>";
         echo "<td>" . $data["vak"] . "</td>";
         echo "<td>" . $data["cijfer"] . "</td>";
+        echo "<td>" . "<a href='update.php'>Update</a>" . "</td>";
+        echo "<td>" . "<a href='delete.php'>Delete</a>" . "</td>";
         echo "</tr>";
     }
 } catch(PDOException $e) {
